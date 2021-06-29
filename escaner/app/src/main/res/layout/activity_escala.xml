@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".escala">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/barraarriba"
+        android:layout_width="match_parent" android:layout_height="100dp"
+        android:backgroundTint="@color/rojo">
+
+        <ImageView
+            android:id="@+id/btn_check"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/ic_bx_check">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/back">
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="413dp"
+        android:layout_height="420dp"
+        android:layout_below="@+id/barraarriba"
+        android:foreground="@color/black" />
+
+    <Button
+        android:id="@+id/negro"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/imagen"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="6dp"
+        android:paddingBottom="5dp"
+        android:backgroundTint="@color/black"/>
+
+    <Button
+        android:id="@+id/gris"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/imagen"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="150dp"
+        android:backgroundTint="@color/gris"/>
+
+    <Button
+        android:id="@+id/normal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/imagen"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="300dp"
+        android:backgroundTint="@color/purple_700"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/barraabajo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/barraarriba"
+        android:layout_marginTop="532dp"
+        android:layout_marginBottom="-635dp"
+        android:backgroundTint="@color/rojo">
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vistaPDF">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/barraarriba"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/rojo">
+
+
+        <ImageView
+            android:id="@+id/btn_save"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/ic_bxs_save">
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/barraabajo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/barraarriba"
+        android:layout_marginTop="532dp"
+        android:layout_marginBottom="-635dp"
+        android:backgroundTint="@color/rojo">
+
+        <ImageView
+            android:id="@+id/btncamara"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+         android:layout_gravity="center"
+            android:src="@drawable/camara">
+        </ImageView>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
